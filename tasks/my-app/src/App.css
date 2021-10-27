@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  background: #c3c3c3;;
+  padding: 30px 0;
+}
+.box__guest {
+  background: white;
+  padding: 50px;
+}
+.box__guest h1 {
+  position: relative;
+  font-size: 60px;
+  z-index: 1;
+}
+.box__guest h1::after {
+  content: "Список жертв";
+  position: absolute;
+  color: red;
+  top: -2px;
+  right: 233px;
+  font-size: 28px;
+  text-decoration: line-through;
+  transform: rotate(-10deg);
+  z-index: -1;
+}
+.box__guest h1::before {
+  content: "";
+  background-image: url('./img/search.png');
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+

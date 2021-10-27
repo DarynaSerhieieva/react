@@ -1,0 +1,15 @@
+.input {
+    background-color: #e0e0e0;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border: 6px solid transparent;
+}
+.input:hover {
+    border-color: #e0e0e0;
+    background: transparent;
+}
+.input:focus {
+    outline: none;
+}
