@@ -1,9 +1,9 @@
 import React from "react";
 
-const Loader = ({img}) => {
+const Loader = ({img, load, error}) => {
 
     return(
-        <img src={img}></img>
+        <img onError={error} onLoad={load} src={img} alt='img'></img>
     )
 }
 

@@ -19,8 +19,9 @@ const User = ({interviewed, user, toggleInterviewed}) => {
             <Button 
                 style={styleButton} 
                 click={() => {toggleInterviewed(user.id)}}
-                text={interviewed? 'absent' : 'arrived'}
-            />
+            >
+                {interviewed ? 'absent' : 'arrived'}
+            </Button>
         </li>
     )
 }

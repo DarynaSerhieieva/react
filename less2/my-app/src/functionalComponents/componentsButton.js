@@ -18,11 +18,9 @@ const ComponentsButton = () => {
     return(
         <>
             <h2>This is Components Button</h2>
-            <Button
-                text="Button"
-                click= {doSomething}
-                style= {style}
-            />
+            <Button click= {doSomething} style= {style}>
+                Button  
+            </Button>
         </>
     );
 
