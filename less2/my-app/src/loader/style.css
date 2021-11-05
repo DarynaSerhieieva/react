@@ -1,5 +1,5 @@
 .imgBlock {
-    margin-top: 10%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,10 +91,12 @@
     }
 }
 
-img {
+
+img,
+h2 {
     animation-name: imgAnimation;
     animation-duration: 2s;
-  }
+}
   
 @keyframes imgAnimation {
     0% {
