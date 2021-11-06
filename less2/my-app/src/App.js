@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
   return (
-    <>
+    <div className='block'>
       {/* <h1>This is main window</h1> */}
       {/* <ComponentsButton /> */}
       {/* <Users/> */}
@@ -26,7 +26,7 @@ function App() {
           <Cell type="money" currency="$">4</Cell>
         </Row>
       </Table>
-    </>
+    </div>
   );
 }
 

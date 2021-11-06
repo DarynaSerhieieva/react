@@ -1,10 +1,3 @@
-.imgBlock {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .lds-roller {
     display: inline-block;
     position: relative;

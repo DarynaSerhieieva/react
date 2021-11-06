@@ -4,7 +4,11 @@ export const Table = ({children}) => {
 
     return(
         <>
-            {children}
+            <table>
+                <tbody>
+                    {children}
+                </tbody>
+            </table>
         </>
     )
     
