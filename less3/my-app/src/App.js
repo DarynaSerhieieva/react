@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 // import Toggler from "./toggler/Toggler";
 // import Input from "./input/Input";
-import Form from "./form";
+// import Form from "./form";
+import Table from "./table";
 import './App.css';
 
 
@@ -19,7 +20,11 @@ class App extends Component {
           {/* <Input/> */}
 
           {/* task 3 form */}
-          <Form/>
+          {/* <Form/> */}
+
+          {/* task 4 tabel */}
+
+          <Table/>
 
         </div>
 

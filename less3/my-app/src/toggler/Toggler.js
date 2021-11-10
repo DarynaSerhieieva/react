@@ -22,15 +22,15 @@ class Toggler extends Component {
     return (
       <>
         <MapRadioButton label='gender' action={this.changeTogglerGender} actionState={gender}>
-        <RadioButton name='male'></RadioButton>
-        <RadioButton name='female'></RadioButton>
+          <RadioButton name='male'/>
+          <RadioButton name='female'/>
         </MapRadioButton>
         
         <MapRadioButton label='layout' action={this.changeTogglerLayout} actionState={layout}>
-        <RadioButton name='left'></RadioButton>
-        <RadioButton name='center'></RadioButton>
-        <RadioButton name='right'></RadioButton>
-        <RadioButton name='baseline'></RadioButton>
+          <RadioButton name='left'/>
+          <RadioButton name='center'/>
+          <RadioButton name='right'/>
+          <RadioButton name='baseline'/>
         </MapRadioButton>
       </>
     );
