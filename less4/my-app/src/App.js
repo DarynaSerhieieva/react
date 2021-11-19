@@ -1,7 +1,8 @@
 import './App.css';
 // import ChartSchedule from './chart/ChartSchedule';
 // import Context from './context';
-import Form from './formHook';
+// import Form from './formHook';
+import  {DataTable } from './getData';
 
 function App() {
   return (
@@ -13,7 +14,11 @@ function App() {
       {/* <Context/> */}
 
       {/* task 3 */}
-      <Form/>
+      {/* <Form/> */}
+
+      {/* task 4 */}
+      <DataTable/>
+
     </div>
   );
 }

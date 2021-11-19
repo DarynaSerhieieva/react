@@ -1,0 +1,15 @@
+.box {
+    height: auto;
+}
+.data-table {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.data-table__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}

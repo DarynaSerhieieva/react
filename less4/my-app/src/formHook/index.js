@@ -1,10 +1,10 @@
 import React, { useState } from "react";
+import uniqid from 'uniqid';
+
 import { Select, Option } from "./select/index";
 import { InputItem } from "./InputItem";
 import {MapRadioButton, RadioButton} from './toggler';
 import { LiItem } from "./LIItem";
-import uniqid from 'uniqid';
-
 
 const Form = () => {
 
