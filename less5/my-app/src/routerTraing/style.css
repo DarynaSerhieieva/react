@@ -1,0 +1,16 @@
+.link {
+    display: flex;
+}
+.link a {
+    margin-right: 10px;
+    color: orangered;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.link a:hover {
+    color: rgb(255, 154, 117);
+}
+a.active {
+    color: red;
+}

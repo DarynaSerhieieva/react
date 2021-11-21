@@ -1,0 +1,7 @@
+.block {
+    display: flex;
+    align-items: center;
+}
+.block h2 {
+    margin-right: 10px;
+}
