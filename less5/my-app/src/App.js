@@ -1,15 +1,22 @@
 import './App.css';
-import { RouterTreining } from './routerTraing';
+// import { RouterTreining } from './routerTraing';
+import ReactRouter from './app';
 
 function App() {
 
   return (
-    <div className="box">
+    <>
+      {/* <div className="box"> */}
 
-      {/* task 1/2 */}
-      <RouterTreining/>
+        {/* task 1/2 */}
+        {/* <RouterTreining/> */}
 
-    </div>
+      {/* </div> */}
+
+      <div className='list'>
+        <ReactRouter/>
+      </div>
+    </>
   );
 }
 

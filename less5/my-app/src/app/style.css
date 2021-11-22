@@ -1,0 +1,35 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: auto;
+}
+.main-menu {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-menu a {
+    color: #5aa8b8;;
+    display: flex;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-menu a:not(:last-child ) {
+    margin-right: 50px;
+}
+.logo {
+    position: relative;
+    padding-left: 100px;
+}
+.logo::before {
+    content: '';
+    background-image: url('../img/logo.svg');
+    position: absolute;
+    width: 87px;
+    height: 40px;
+    top: -11px;
+    left: -15px;
+}

@@ -5,3 +5,6 @@
 .block h2 {
     margin-right: 10px;
 }
+select {
+    margin-left: 10px;
+}

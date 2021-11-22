@@ -1,9 +1,9 @@
 import React from "react";
 import uniqid from 'uniqid';
-import { BrowserRouter,  Route, NavLink, Link, Switch } from 'react-router-dom';
-import { NotFound, Item } from "./";
+import { BrowserRouter,  Route, Link} from 'react-router-dom';
+import { Item } from "./";
 
-import { useDataFetch } from "../hook/useDataFetch";
+import { useDataFetch } from "../../hook/useDataFetch";
 
 export const List = () => {
 

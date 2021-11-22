@@ -1,23 +1,31 @@
-import React, { Component, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import './style.css';
 
-import { useDataFetch } from "../hook/useDataFetch";
+import { useDataFetch } from "../../hook/useDataFetch";
 
 export const Item = () => {
 
-    const params = useParams();
+    const { itemid } = useParams();
 
-    const [ data ] = useDataFetch(`https://jsonplaceholder.typicode.com/users/${params.itemid}`);
+    const [ data ] = useDataFetch(`https://jsonplaceholder.typicode.com/users/${itemid}`);
 
-    const [ rating, setRating ] = useState(localStorage.getItem(`rating ${params.itemid}`));
+    const [ rating, setRating ] = useState('');
+
+    const getRate = () => Number(localStorage.getItem(`id ${itemid}`))
 
     const handlerRating = e => {
-        console.log(rating)
-        const newRating= Number(rating) + Number(e.target.value)
-        setRating(newRating);
-        localStorage.setItem(`rating ${params.itemid}`, newRating);
+
+        let rate = getRate() + Number(e.target.value);
+        localStorage.setItem(`id ${itemid}`, rate);
+        
+        setRating(rate);
+        e.target.value = 'base';
     }
+
+    useEffect(() => {
+        setRating(getRate());
+    }, [itemid]);
 
     return (
         <>
@@ -27,9 +35,9 @@ export const Item = () => {
             </div>
             
             <div className='block'>
-                <h3>Rate user</h3>
-                {/* <input type='number' onChange={ handlerRating }/> */}
+                <h3>Rate user: </h3>
                 <select onChange={ handlerRating }>
+                    <option value='base' selected disabled hidden>Choose here</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>

@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter,  Route, NavLink, Switch } from 'react-router-dom';
 import './style.css'
 
-import { HomePage, List, Item, About, Contacts, NotFound } from './components';
+import { HomePage, List, About, Contacts, NotFound } from './components';
 
 export const RouterTreining = () => {
 
