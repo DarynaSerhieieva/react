@@ -22,11 +22,8 @@ export const List = () => {
                         ))
                     }
                 </Route>
-
-                    {/* <Route exact path="/list/" component={ List } /> */}
                 
                 <Route exact path="/list/:itemid" component={ Item } />
-                
 
             </ul>
         </BrowserRouter>

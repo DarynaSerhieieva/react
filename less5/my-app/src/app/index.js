@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Link, NavLink, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 
 import routes_map from '../routes_map';
 import './style.css'
@@ -14,6 +14,16 @@ const ReactRouter= () => {
                 { 
                     routes_map.map( route => {
                         if( route.menu_title ){
+                            if (route.path === '/posts/limit/:limited') {
+                                return(
+                                    <Link
+                                        key={ route.path }
+                                        to='/posts/limit/30'
+                                    > 
+                                        { route.menu_title } 
+                                    </Link>
+                                )
+                            }
                             return (
                             <Link
                                 key={ route.path }
@@ -31,9 +41,9 @@ const ReactRouter= () => {
                 <Switch>
                     {
                         routes_map.map( route => {
-                            if( route.type === "public"){
-                                return <Route key={route.path} {...route} />
-                            }
+                            return (
+                                <Route key={route.path} {...route} />
+                            ) 
                         })
                     }
                 </Switch>
